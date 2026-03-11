@@ -19,4 +19,16 @@ public class CardController {
     public List<Card> getCards(@PathVariable String owner) {
         return cardService.getCardsByOwner(owner);
     }
+
+    @PostMapping("/transfer")
+    public String transfer(@RequestParam String from,
+                           @RequestParam String to,
+                           @RequestParam java.math.BigDecimal amount) {
+        return cardService.transferMoney(from, to, amount);
+    }
+
+    @PatchMapping("/block/{number}")
+    public String block(@PathVariable String number) {
+        return cardService.blockCard(number);
+    }
 }
