@@ -3,7 +3,7 @@ spring:
     url: jdbc:h2:mem:bankdb
     driverClassName: org.h2.Driver
     username: sa
-    password:
+    password: ""
   h2:
     console:
       enabled: true
@@ -12,3 +12,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  liquibase:
+    enabled: true
+    change-log: classpath:db/migration/V1__create_cards_table.sql
