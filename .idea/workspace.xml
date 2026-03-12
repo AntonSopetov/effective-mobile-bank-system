@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9e5c406-013d-46fa-ba48-f19552a041c0" name="Changes" comment="Реализован базовый API: просмотр карт с маскировкой (Lambda), создание и блокировка карт. Подключен Liquibase.">
+    <list default="true" id="b9e5c406-013d-46fa-ba48-f19552a041c0" name="Changes" comment="Добавлена валидация данных в Entity и исправлена логика создания карт в контроллере.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/security/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/security/JwtUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/controller/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/controller/CardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/entity/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/entity/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/service/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/service/CardService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,13 +109,22 @@
       <option name="project" value="LOCAL" />
       <updated>1773300644627</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавлена валидация данных в Entity и исправлена логика создания карт в контроллере.">
+      <option name="closed" value="true" />
+      <created>1773303075251</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773303075251</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавлена логика перевода денег и блокировки карт." />
     <MESSAGE value="Подключен Liquibase и базовый Security." />
     <MESSAGE value="Реализован базовый API: просмотр карт с маскировкой (Lambda), создание и блокировка карт. Подключен Liquibase." />
-    <option name="LAST_COMMIT_MESSAGE" value="Реализован базовый API: просмотр карт с маскировкой (Lambda), создание и блокировка карт. Подключен Liquibase." />
+    <MESSAGE value="Добавлена валидация данных в Entity и исправлена логика создания карт в контроллере." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена валидация данных в Entity и исправлена логика создания карт в контроллере." />
   </component>
 </project>
