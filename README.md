@@ -1,4 +1,3 @@
-markdown
 # Effective Mobile Bank System
 
 Тестовое задание: REST-сервис для управления банковскими картами.
