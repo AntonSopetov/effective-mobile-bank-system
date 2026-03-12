@@ -58,4 +58,12 @@ public class CardService {
         cardRepository.save(card);
         return "Карта " + cardNumber + " заблокирована!";
     }
+
+    public Card createCard(Card card) {
+        if (card.getBalance() == null) {
+            card.setBalance(java.math.BigDecimal.ZERO);
+        }
+        card.setStatus("ACTIVE");
+        return cardRepository.save(card);
+    }
 }

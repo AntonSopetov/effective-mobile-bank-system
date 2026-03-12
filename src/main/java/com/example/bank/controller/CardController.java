@@ -31,4 +31,9 @@ public class CardController {
     public String block(@PathVariable String number) {
         return cardService.blockCard(number);
     }
+
+    @PostMapping
+    public Card createCard(@RequestBody Card card) {
+        return cardService.createCard(card);
+    }
 }
