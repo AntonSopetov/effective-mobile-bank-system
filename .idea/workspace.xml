@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9e5c406-013d-46fa-ba48-f19552a041c0" name="Changes" comment="Реализована аутентификация через JWT-токены и настройка прав доступа Spring Security.">
+    <list default="true" id="b9e5c406-013d-46fa-ba48-f19552a041c0" name="Changes" comment="Обновлена документация проекта: добавлен финальный README.md с инструкцией по запуску и описанием API.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README_Bank_rest.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/README_Docs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/README_Resources.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/README_Migration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/bankcards/README_Bankcards.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/README_Resources.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/README_Migration.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +137,23 @@
       <option name="project" value="LOCAL" />
       <updated>1773304963009</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Обновлена документация проекта: добавлен финальный README.md с инструкцией по запуску и описанием API.">
+      <option name="closed" value="true" />
+      <created>1773305717785</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1773305717789</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Обновлена документация проекта: добавлен финальный README.md с инструкцией по запуску и описанием API.">
+      <option name="closed" value="true" />
+      <created>1773306017630</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1773306017633</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -141,6 +163,7 @@
     <MESSAGE value="Добавлена валидация данных в Entity и исправлена логика создания карт в контроллере." />
     <MESSAGE value="Интегрирован Spring Security и JWT фильтрация запросов." />
     <MESSAGE value="Реализована аутентификация через JWT-токены и настройка прав доступа Spring Security." />
-    <option name="LAST_COMMIT_MESSAGE" value="Реализована аутентификация через JWT-токены и настройка прав доступа Spring Security." />
+    <MESSAGE value="Обновлена документация проекта: добавлен финальный README.md с инструкцией по запуску и описанием API." />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновлена документация проекта: добавлен финальный README.md с инструкцией по запуску и описанием API." />
   </component>
 </project>
