@@ -59,7 +59,7 @@ public class CardService {
         return "Карта " + cardNumber + " заблокирована!";
     }
 
-    public Card createCard(Card card) {
+    public Card saveCard(Card card) {
         if (card.getBalance() == null) {
             card.setBalance(java.math.BigDecimal.ZERO);
         }

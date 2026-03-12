@@ -2,7 +2,9 @@ package com.example.bank.controller;
 
 import com.example.bank.entity.Card;
 import com.example.bank.service.CardService;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
+import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
@@ -23,7 +25,7 @@ public class CardController {
     @PostMapping("/transfer")
     public String transfer(@RequestParam String from,
                            @RequestParam String to,
-                           @RequestParam java.math.BigDecimal amount) {
+                           @RequestParam BigDecimal amount) {
         return cardService.transferMoney(from, to, amount);
     }
 
@@ -32,8 +34,8 @@ public class CardController {
         return cardService.blockCard(number);
     }
 
-    @PostMapping
-    public Card createCard(@RequestBody Card card) {
-        return cardService.createCard(card);
+    @PostMapping("/create")
+    public Card createCard(@Valid @RequestBody Card card) {
+        return cardService.saveCard(card);
     }
 }

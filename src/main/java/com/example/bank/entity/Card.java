@@ -1,6 +1,7 @@
 package com.example.bank.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 import lombok.Getter;
 import lombok.Setter;
 import java.math.BigDecimal;
@@ -19,14 +20,16 @@ public class Card {
     @Column(nullable = false, unique = true)
     private String cardNumber;
 
+    @NotBlank(message = "Владелец не может быть пустым")
     @Column(nullable = false)
     private String owner;
 
     private LocalDate expirationDate;
 
     @Column(nullable = false)
-    private String status; // "ACTIVE", "BLOCKED", "EXPIRED"
+    private String status;
 
+    @PositiveOrZero(message = "Баланс не может быть отрицательным")
     @Column(nullable = false)
     private BigDecimal balance;
 }
