@@ -9,7 +9,8 @@ import java.util.Date;
 
 @Component
 public class JwtUtils {
-    private final Key key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
+    private final String secret = "my-super-secret-key-for-bank-system-32-chars-long";
+    private final Key key = Keys.hmacShaKeyFor(secret.getBytes());
 
     public String generateToken(String username) {
         return Jwts.builder()

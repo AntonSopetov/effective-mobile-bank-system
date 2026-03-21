@@ -4,15 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9e5c406-013d-46fa-ba48-f19552a041c0" name="Changes" comment="Обновлена документация проекта: добавлен финальный README.md с инструкцией по запуску и описанием API.">
+    <list default="true" id="b9e5c406-013d-46fa-ba48-f19552a041c0" name="Changes" comment="Final cleanup: removed all temporary instruction files.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/dto/CardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/service/CardServiceInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/bank/CardServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README_Bank_rest.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README_Docs.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/README_Resources.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/README_Migration.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/bankcards/README_Bankcards.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/README_Resources.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/README_Migration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/controller/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/controller/CardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/repository/CardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/repository/CardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/security/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/security/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/security/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bank/service/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bank/service/CardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/config/README_Config.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/controller/README_Controller.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/dto/README_Dto.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/entity/README_Entity.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/exception/README_Exception.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/repository/README_Repository.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/security/README_Security.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/service/README_Service.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bankcards/util/README_Util.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/bankcards/controller/README_Controller.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/bankcards/service/README_Service.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/bank/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/controller/CardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/bank/controller/CardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/repository/CardRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/bank/repository/CardRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/security/JwtFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/bank/security/JwtFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/bank/service/CardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/bank/service/CardService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +86,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/bank_rest&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -74,10 +95,15 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.bankcards.service" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
       </set>
     </attachedChunks>
   </component>
@@ -153,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773306017633</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Final cleanup: removed all temporary instruction files.">
+      <option name="closed" value="true" />
+      <created>1773307185781</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1773307185781</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -164,6 +198,7 @@
     <MESSAGE value="Интегрирован Spring Security и JWT фильтрация запросов." />
     <MESSAGE value="Реализована аутентификация через JWT-токены и настройка прав доступа Spring Security." />
     <MESSAGE value="Обновлена документация проекта: добавлен финальный README.md с инструкцией по запуску и описанием API." />
-    <option name="LAST_COMMIT_MESSAGE" value="Обновлена документация проекта: добавлен финальный README.md с инструкцией по запуску и описанием API." />
+    <MESSAGE value="Final cleanup: removed all temporary instruction files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Final cleanup: removed all temporary instruction files." />
   </component>
 </project>

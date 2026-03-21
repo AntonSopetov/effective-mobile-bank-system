@@ -1,9 +1,10 @@
 package com.example.bank.controller;
 
-import com.example.bank.entity.Card;
-import com.example.bank.service.CardService;
+import com.example.bank.dto.CardDto;
+import com.example.bank.service.CardServiceInterface;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
+
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -11,17 +12,20 @@ import java.util.List;
 @RequestMapping("/api/cards")
 public class CardController {
 
-    private final CardService cardService;
+    // Внедряем ИНТЕРФЕЙС, а не класс (это исправление пункта №12)
+    private final CardServiceInterface cardService;
 
-    public CardController(CardService cardService) {
+    public CardController(CardServiceInterface cardService) {
         this.cardService = cardService;
     }
 
+    // 1. Просмотр карт (теперь возвращает CardDto, исправляем пункт №4)
     @GetMapping("/{owner}")
-    public List<Card> getCards(@PathVariable String owner) {
+    public List<CardDto> getCards(@PathVariable String owner) {
         return cardService.getCardsByOwner(owner);
     }
 
+    // 2. Перевод денег
     @PostMapping("/transfer")
     public String transfer(@RequestParam String from,
                            @RequestParam String to,
@@ -29,13 +33,15 @@ public class CardController {
         return cardService.transferMoney(from, to, amount);
     }
 
+    // 3. Блокировка карты
     @PatchMapping("/block/{number}")
     public String block(@PathVariable String number) {
         return cardService.blockCard(number);
     }
 
+    // 4. Создание новой карты (принимает и возвращает CardDto, исправляем пункт №4)
     @PostMapping("/create")
-    public Card createCard(@Valid @RequestBody Card card) {
-        return cardService.saveCard(card);
+    public CardDto createCard(@Valid @RequestBody CardDto cardDto) {
+        return cardService.saveCard(cardDto);
     }
 }
