@@ -19,5 +19,6 @@
 * `GET /api/cards/{owner}` — Просмотр карт владельца (требуется Bearer токен).
 * `POST /api/cards/transfer` — Перевод между картами.
 * `PATCH /api/cards/block/{number}` — Блокировка карты.
+* `Интерактивная документация (Swagger UI):` http://localhost:8080/swagger-ui/index.html (доступна после запуска приложения)
 
 *Примечание: Номера карт маскируются в целях безопасности (Lambda-логика в CardService).*
